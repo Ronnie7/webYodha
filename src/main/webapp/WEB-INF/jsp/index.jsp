@@ -35,7 +35,7 @@
                             <h4 class="card-title">LAND ROVER RANGE ROVER EVOQUE</h4>
                         </div>
                         <p class="card-text"> </p>
-                    </div><!-- person-card -->
+                    </div><!-- card -->
 
                     <div class="card">
                         <img src="http://placehold.it/350x250"alt="Favorite TV Shows ">
@@ -45,7 +45,7 @@
                         </div>
                         <p class="card-text">
                         </p>
-                    </div><!-- person-card -->
+                    </div><!-- card -->
 
                      <div class="card">
                         <img src="http://placehold.it/350x250"alt="Favorite TV Shows ">
@@ -55,17 +55,8 @@
                         </div>
                         <p class="card-text">
                         </p>
-                    </div><!-- person-card -->
+                    </div><!-- card -->
                 </div><!-- container -->
             </div>
         </section>
- <%--   <section class="page--middle">
-        <div class="quote"></div>
-    </section>--%>
-
-
 <jsp:include page="Modules/footer.jsp"/>
-
-<%--   <h1 class="title--name" data-anijs="if: load, on: window, do: bounceInDown animated, before: scrollReveal">Narendra Kumar</h1>
-        <h2 data-anijs="if: animationend, on:.title--name, do: hinge animated, after: removeAnim">Ronnie</h2>
-  --%>

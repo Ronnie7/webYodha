@@ -14,12 +14,8 @@
                      <a href="https://twitter.com/ronnierathore" target="_blank">@Ronnie</a></div>
              </div>
         </footer>
-<script src="../../static/scripts/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-<%--
-        <script src="../../static/scripts/background.js" type="text/javascript"></script>
---%>
+<script src="../../static/scripts/jquery-3.1.1.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
-        <script src="../../static/scripts/anijs-min.js"></script>
      <script type="text/javascript">
         $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=", function(a) {
             $(".quote").html( "<h2>Thought for Today</h2>"+
@@ -27,5 +23,6 @@
             );
         });
     </script>
+    <script src="../../static/scripts/anijs-min.js"></script>
     </body>
 </html>

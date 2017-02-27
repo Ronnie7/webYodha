@@ -10,12 +10,16 @@ import org.springframework.web.servlet.ModelAndView;
  */
 
 @Controller
-public class Home {
+public class HomeController {
 
     @RequestMapping("/")
-    public String test(ModelAndView modelAndView) {
+    public String index(ModelAndView modelAndView) {
          return "index";
-
-         //test
     }
+
+    @RequestMapping("/code")
+    public String code(ModelAndView modelAndView) {
+         return "code";
+    }
+
 }

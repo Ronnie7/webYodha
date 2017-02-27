@@ -62,7 +62,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/">
+                    <a href="${pageContext.request.contextPath}/blog">
                         <svg xmlns="http://www.w3.org/2000/svg" height="75" width="75">
                             <circle cx="37" cy="37" r="35" stroke="#e85915" stroke-width="5" fill="#232323"></circle>
                             <text class="pointIndex" x="37" y="37">
@@ -72,7 +72,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/">
+                    <a href="${pageContext.request.contextPath}/code">
                         <svg xmlns="http://www.w3.org/2000/svg" height="75" width="75">
                             <circle cx="37" cy="37" r="35" stroke="#e85915" stroke-width="5" fill="#232323"></circle>
                             <text class="pointIndex" x="37" y="37">
