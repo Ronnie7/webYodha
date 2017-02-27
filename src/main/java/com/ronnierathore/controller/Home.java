@@ -15,5 +15,7 @@ public class Home {
     @RequestMapping("/")
     public String test(ModelAndView modelAndView) {
          return "index";
+
+         //test
     }
 }
