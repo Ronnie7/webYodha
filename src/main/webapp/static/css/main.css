@@ -1,0 +1,365 @@
+
+@import "https://fonts.googleapis.com/css?family=Abel";
+
+@font-face {
+    font-family: 'shojumaruregular';
+    src: url('fonts/shojumaru-regular.woff2') format('woff2'),
+    url('fonts/shojumaru-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+body {
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    font: 100%/1.5 'Abel',Baskerville, Palatino, serif;
+    font-size: 1.25em;
+}
+
+body, .my--intro::before {
+    background: rgba(235, 231, 253, 0.3) url("../img/background01.jpg") 0 / cover fixed;
+}
+
+section {
+    padding: 1em calc(50% - 650px);
+    overflow: hidden;
+}
+
+footer {
+    background: #e85915;
+    color: white;
+}
+
+header {
+    color: #464646;
+}
+
+main {
+    box-sizing: border-box;
+    min-height: calc(100vh - 3.5em - 1em);
+}
+
+header, footer {
+    padding: 1em calc(50% - 210px);
+}
+
+h1 {
+    font-family: 'shojumaruregular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    z-index: 1001;
+}
+
+canvas {
+    background-color: rgba(0, 0, 0, .2);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.header--container {
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 1.5em;
+    -webkit-box-align: center;
+    -webkit-box-pack: justify;
+}
+
+.left {
+    background: #fff;
+    background: radial-gradient(circle at top left, transparent 0, #fff 0) top left,
+    radial-gradient(circle at top right, transparent 15px, #fff 0) top right,
+    radial-gradient(circle at bottom right, transparent 15px, #fff 0) bottom right,
+    radial-gradient(circle at bottom left, transparent 0, #fff 0) bottom left;
+    background-repeat: no-repeat;
+    background-size: 60% 60%;
+    color: white;
+    font: 130%/1.6 Baskerville, Palatino, serif;
+    max-height: 61px;
+    padding: 0 .4em 0 0;
+    width: 20%;
+}
+
+.right {
+    background: #e85915;
+    background: radial-gradient(circle at top left, transparent 15px, #e85915 0) top left,
+    radial-gradient(circle at top right, transparent 0, #e85915 0) top right,
+    radial-gradient(circle at bottom right, transparent 0, #e85915 0) bottom right,
+    radial-gradient(circle at bottom left, transparent 15px, #e85915 0) bottom left;
+    background-repeat: no-repeat;
+    background-size: 60% 60%;
+    color: white;
+    font: 130%/1.6 Baskerville, Palatino, serif;
+    max-height: 61px;
+    padding: 0 0 0 .5em;
+    width: 20%;
+}
+
+.my--name {
+    align-items: center;
+    background: #232323;
+    border-radius: 50%;
+    box-shadow: 0 0 0 .9em #e85915;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    height: 180px;
+    text-align: center;
+    width: 180px;
+    -webkit-box-align: center;
+}
+
+.my--name h1 {
+    font-size: 2rem;
+    margin: 0 auto;
+}
+
+.my--intro {
+    position: relative;
+    margin: 0 auto;
+    padding: 1em;
+    color:#232323;
+    max-width: 70em;
+    background: hsla(0,0%,100%,.25) border-box;
+    overflow: hidden;
+    border-radius: .3em;
+    box-shadow: 0 0 0 1px hsla(0,0%,100%,.3) inset,
+    0 .5em 1em rgba(0, 0, 0, 0.6);
+    text-shadow: 0 1px 1px hsla(0,0%,100%,.3);
+}
+.card{
+    position: relative;
+    margin: 0 auto;
+    padding: 1em;
+    color: #fff;
+    max-width: 70em;
+    background: rgba(35, 35, 35, 0.61) border-box;
+    overflow: hidden;
+    border-radius: .3em;
+    box-shadow: 0 0 0 1px hsla(0,0%,100%,.3) inset,
+    0 .5em 1em rgba(0, 0, 0, 0.6);
+    text-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.58);
+}
+.my--intro::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    margin: -30px;
+    z-index: -1;
+    -webkit-filter: blur(20px);
+    filter: blur(20px);
+}
+
+.dots--orange {
+    background-color: transparent;
+    background-image: -webkit-radial-gradient(#e85915 20%, transparent 0),
+    -webkit-radial-gradient(#e85915 20%, transparent 0);
+    background-image: radial-gradient(#e85915 20%, transparent 0),
+    radial-gradient(#e85915 20%, transparent 0);
+    background-position: 0 0, 15px 15px;
+    background-size: 30px 30px;
+    border-radius: .5em;
+    display: block;
+    margin-top: 1px;
+    padding: 1.17em 0;
+}
+
+.dots--white {
+    background-color: transparent;
+    background-image: -webkit-radial-gradient(#fff 20%, transparent 0),
+    -webkit-radial-gradient(#fff 20%, transparent 0);
+    background-image: radial-gradient(#fff 20%, transparent 0),
+    radial-gradient(#fff 20%, transparent 0);
+    background-position: 0 0, 15px 15px;
+    background-size: 30px 30px;
+    border-radius: .5em;
+    display: block;
+    margin-top: 1px;
+    padding: 1.17em 0;
+}
+
+.css-typing {
+    animation: type 5s steps(550, end);
+    -webkit-animation: type 5s steps(550, end);
+    overflow: hidden;
+    white-space: nowrap;
+    width: 12em;
+}
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+}
+
+@-webkit-keyframes type {
+    from {
+        width: 0;
+    }
+}
+
+.footer__copyright {
+    text-align: center;
+}
+
+.columns {
+    line-height: 1.25rem;
+    padding: .5em;
+}
+
+/*base code*/
+.animated.fadeInUpBig {
+    animation-duration: 5s;
+    -webkit-animation-duration: 5s;
+}
+
+.animated.infinite {
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+/*the animation definition*/
+@-webkit-keyframes fadeInUpBig {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 2000px, 0);
+        transform: translate3d(0, 2000px, 0)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes fadeInUpBig {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 2000px, 0);
+        transform: translate3d(0, 2000px, 0)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+.fadeInUpBig {
+    animation-name: fadeInUpBig;
+    -webkit-animation-name: fadeInUpBig;
+}
+
+.quote {
+    position: relative;
+    background: #e85915; /* Fallback */
+    background: linear-gradient(-150deg, transparent 1.5em, #e85915 0);
+    padding: .7em;
+    color: white;
+    border-radius: .5em;
+    margin: 0 1em;
+}
+
+.quote::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 1.73em; height: 3em;
+    background: linear-gradient(to left bottom, transparent 50%, rgba(0,0,0,.2) 0, rgba(0,0,0,.4)) 100% 0 no-repeat;
+    transform: translateY(-1.3em) rotate(-30deg);
+    transform-origin: bottom right;
+    border-bottom-left-radius: .5em;
+    box-shadow: -.2em .2em .3em -.1em rgba(0,0,0,.15)
+}
+
+.small--text{
+    font-size: .9em;
+}
+
+.red{
+    color: red;
+}
+
+.headline {
+    color: white;
+    padding-bottom: 20px;
+    padding-bottom: 2rem;
+}
+
+.cards .card{
+    padding:.5em;
+}
+
+
+@media screen and (min-width: 65em) {
+    .right,
+    .left {
+        width: 40%;
+    }
+    .columns {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: .5em;
+        -webkit-box-pack: justify;
+    }
+
+    .column--25 {
+        width: 25%;
+    }
+
+    .column--75 {
+        width: 75%;
+    }
+    .cards{
+        display: flex;
+        justify-content: space-around;
+        flex: 1 0 0;
+    }
+}
+.main--nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+ }
+
+.main--nav ul li{
+    width: 33%;
+}
+/*
+.cards .card {
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    -webkit-transform: scale(.9);
+    -ms-transform: scale(.9);
+    transform: scale(.9);
+    opacity: .8;
+    margin-bottom: 5%;
+    max-width: 400px;
+    background: #FFFFFF;
+    background: rgba(232, 89, 21, 1);
+    border-radius: 20px;
+}
+
+.cards .card:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    opacity: 1;
+}
+ */
+
