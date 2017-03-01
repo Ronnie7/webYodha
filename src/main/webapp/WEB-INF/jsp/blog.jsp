@@ -7,17 +7,18 @@
   To change this template use File | Settings | File Templates.
 --%>
 <jsp:include page="Modules/header.jsp"/>
-<div class="page--wrapper blog">
-    <section class="blog--listing">
-
-        <c:forEach items="${blogs}" var="blog">
-            <c:out value="${blog.id}"/>
-            <c:out value="${blog.postingDateTime}"/>
-            <c:out value="${blog.author}"/>
-            <c:out value="${blog.heading}"/>
-            <c:out value="${blog.images}"/>
-            <c:out value="${blog.body}"/>
-        </c:forEach>
-    </section>
+<div class="blog--container">
+    <div class="page--wrapper">
+        <section class="blog--listing">
+            <c:forEach items="${blogs}" var="blog" >
+                <h1> <c:out value="${blog.heading}"/></h1>
+                <h6> <c:out value="${blog.author}"/></h6>
+                <h6> <c:out value="${blog.postingDateTime}"/></h6>
+                <article>
+                    <c:out value="${blog.body}" escapeXml="false"/>
+                </article>
+            </c:forEach>
+        </section>
+    </div>
 </div>
 <jsp:include page="Modules/footer.jsp"/>

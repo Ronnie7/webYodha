@@ -37,7 +37,7 @@ public class BlogServiceImpl implements BlogService {
         blog.setMetaDescription("Ronnie Kumar First Blog");
         blog.setHeading("This is my first awesome blog.");
         blog.setImages(image);
-        blog.setBody("Hello World, <br> Let's talk  about some wired blog stuff");
+        blog.setBody("Hello World, <br> Let's talk  about some wired blog stuff.");
 
         blogMap.put(1,blog);
     }

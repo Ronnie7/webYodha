@@ -19,7 +19,7 @@ body {
 }
 
 body, .my--intro::before {
-    background: rgba(235, 231, 253, 0.3) url("../img/background01.jpg") 0 / cover fixed;
+    background: rgba(235, 231, 253, 0.3) url("../img/background02.jpg") 0 / cover fixed;
 }
 
 section {
@@ -144,14 +144,30 @@ canvas {
     margin: 0 auto;
     padding: 1em;
     color: #fff;
-    max-width: 70em;
-    background: rgba(35, 35, 35, 0.61) border-box;
+    max-width: 350px;
+    background: rgba(12, 12, 12, 0.87) border-box;
     overflow: hidden;
     border-radius: .3em;
     box-shadow: 0 0 0 1px hsla(0,0%,100%,.3) inset,
     0 .5em 1em rgba(0, 0, 0, 0.6);
     text-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.58);
 }
+
+.card-info ul{
+    list-style: none;
+}
+
+.card-info ul li a,
+.card-info ul li a:visited
+{
+    color: #e85915;
+    text-decoration: none;
+}
+
+.card-info ul li a:hover{
+    color: #fff;
+}
+
 .my--intro::before {
     content: '';
     position: absolute;
@@ -289,7 +305,7 @@ canvas {
 }
 
 .red{
-    color: red;
+    color: #a02222;
 }
 
 .headline {
@@ -339,6 +355,9 @@ canvas {
 
 .main--nav ul li{
     width: 33%;
+}
+.page--wrapper{
+    background-color: #ffffff;
 }
 /*
 .cards .card {
