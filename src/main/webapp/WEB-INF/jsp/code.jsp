@@ -7,8 +7,12 @@
 --%>
 <jsp:include page="Modules/header.jsp"/>
 
-<section class="page--code">
-    <p>Coming Soon!!</p>
-</section>
+<div class="code--container">
+    <div class="page--wrapper">
+        <section class="code--examples">
+            <h1>Koding Fun</h1>
+        </section>
+    </div>
+</div>
 
 <jsp:include page="Modules/footer.jsp"/>

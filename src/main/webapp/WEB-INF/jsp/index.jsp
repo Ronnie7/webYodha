@@ -57,15 +57,6 @@
                         </p>
                     </div><!-- card -->
 
-                     <div class="card">
-                        <img src="http://placehold.it/350x250" alt="Upcoming events in sioux falls">
-                        <div class="card-info">
-                            <h3 class="card-name"> Events</h3>
-                            <h4 class="card-title"> </h4>
-                        </div>
-                        <p class="card-text">
-                        </p>
-                    </div><!-- card -->
                 </div><!-- container -->
             </div>
         </section>

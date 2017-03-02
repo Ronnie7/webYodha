@@ -7,22 +7,23 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 </main>
-         <footer class="footer-area">
-             <div class="wrap">
-                 <div class="footer__copyright">&copy; <% out.println(LocalDateTime.now().getYear()); %> webYodha. All Rights Reserved.</div>
-                 <div class="footer__copyright small--text">Made with <span class="bounceIn animated infinite red" data-anijs="if: hover, on: window, do: bounceIn animated">♥</span> by
-                     <a href="https://twitter.com/ronnierathore" target="_blank">@Ronnie</a></div>
-             </div>
-        </footer>
-<script src="../../static/scripts/jquery-3.1.1.min.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-     <script type="text/javascript">
-        $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=", function(a) {
-            $(".quote").html( "<h2>Thought for Today</h2>"+
-                a[0].content + "<p>— " + a[0].title + "</p>"
-            );
-        });
-    </script>
-    <script src="../../static/scripts/anijs-min.js"></script>
+    <footer class="footer-area">
+        <div class="wrap">
+            <div class="footer__copyright">&copy; <% out.println(LocalDateTime.now().getYear()); %> webYodha. All Rights Reserved.</div>
+            <div class="footer__copyright small--text">Made with <span class="bounceIn animated infinite red" data-anijs="if: hover, on: window, do: bounceIn animated">♥</span> by
+               <a href="https://twitter.com/ronnierathore" target="_blank">@Ronnie</a>
+                <div class="footer-social-icons">
+                    <h4>Follow me on</h4>
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/IAMLUCKY777" class="social-icon" target="_blank"> <i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/RonnieRathore" class="social-icon" target="_blank"> <i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/narendra-kumar-58526437" class="social-icon" target="_blank"> <i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <script> window.require={shim:{modernizr:{exports:"Modernizr"}},urlArgs:"2017-02-20T14:43:25.415Z"}; </script>
+        <script data-main="../../static/scripts/webyodha" src="../../static/scripts/require.min.js" async></script>
     </body>
 </html>

@@ -10,3 +10,9 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+.idea/artifacts/
+.idea/atlassian-ide-plugin.xml
+.idea/module_webyodha.xml
+.idea/uiDesigner.xml
+.idea/workspace.xml
+target/
